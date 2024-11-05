@@ -91,6 +91,7 @@
       overflow: hidden;
 
       #current-option-text1 {
+        margin-top: 160px;
         font-size: 1.6rem;
         line-height: 1.5rem;
         width: 220px;
@@ -354,29 +355,60 @@
 }
 .mooveTexte {
   animation-name: mooveText;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 .mooveTexte2 {
   animation-name: mooveText;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 10s;
+  animation-delay: 20s;
 }
 
 .rMooveTexte {
   animation-name: rMooveText;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 .rMooveTexte2 {
-  animation-delay: 10s;
-  animation-name: rMooveText;
-  animation-duration: 20s;
+  animation-delay: 20s;
+  animation-name: MooveText;
+  animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+
+/* Croix de fermeture */
+
+.crow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.crow :nth-child(1){
+  position: absolute;
+  background-color: rgb(130, 128, 128);
+  width: 30px;
+  height: 3px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+}
+.crow :nth-child(2){
+  position: absolute;
+  background-color: rgb(130, 128, 128);
+  width: 30px;
+  height: 3px;
+  border-radius: 50px;
+  transform: rotate(-45deg);
+}
+
+.customText {
+  text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
 }

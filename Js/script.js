@@ -1,21 +1,21 @@
 const text1_options = [
-    "Un vrai passioné ?",
+    "Un passioné de longue date",
     "Un pannel de compétences qui évolue",
     "Une formation adéquat",
     "De multiple projet personnel"
   ];
   const text2_options = [
-    "69 min. read",
-    "7 min. read",
-    "8 min. read",
-    "87,658.1277 min. read"
+    "",
+    "",
+    "",
+    ""
   ];
   const color_options = ["#EBB9D2", "#FE9968", "#7FE0EB", "#6CE5B1"];
   const image_options = [
-    "../Pictures/vangohg.webp",
-    "../Pictures/paysage.webp",
-    "../Pictures/expérienceVangHog.webp",
-    "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+    "../Pictures/gestion.png",
+    "../Pictures/bg23.jpg",
+    "../Pictures/meZ.png",
+    "../Pictures/dellBg.webp"
   ];
   var i = 0;
   const currentOptionText1 = document.getElementById("current-option-text1");
@@ -156,7 +156,7 @@ class TextScramble {
   let counter = 0
   const next = () => {
     fx.setText(phrases[counter]).then(() => {
-      setTimeout(next, 800)
+      setTimeout(next, 5000)
     })
     counter = (counter + 1) % phrases.length
   }
